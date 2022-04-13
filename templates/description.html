@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title> Movie Target Audience Prediction</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    
+    
+    </head>
+
+<body><nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">🎥🎬</a>
+        
+<ul class="right hide-on-med-down">
+        <li><a href="#"> Navbar Link</a></li>
+        </ul>
+        <ul id="nav-mobile" class="sidenav">
+        <li><a href="#"> Navbar Link</a></li></ul>
+        
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div></nav>
+    <div class="sec no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+
+<div class="sec no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <centre><h1 class="row center"><table style="width:100%">
+  <tr>
+    <th>Fields</th>
+    <th>Description</th>
+    <th>Input</th>
+  </tr>
+  <tr>
+    <td>Director</td>
+    <td>The director of the movie</td>
+    <td>A.R. Murgadoos</td>
+  </tr>
+  <tr>
+    <td>Actor</td>
+    <td>The actor of the movie</td>
+    <td>Hrithik Roshan,Ranbir Kapoor</td>
+  </tr>
+  <tr>
+    <td>Actress</td>
+    <td>The actress of the movie</td>
+    <td>Deepika Padukone, Diana Penty</td>
+  </tr>
+<tr>
+    <td>Certificate</td>
+    <td>The Certificate of the movie</td>
+    <td>U/A,A</td>
+  </tr>
+    <tr>
+    <td>Rating</td>
+    <td>The General Rating of the movie</td>
+    <td>Can Range from 1-5</td>
+  </tr>
+    <tr>
+    <td>Horror</td>
+    <td>Whether the movie is a horror movie</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+    <tr>
+    <td>Thriller</td>
+    <td>Whether the movie is a thriller movie</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+            <tr>
+    <td>Action</td>
+    <td>Whether the movie is a Action-based movie</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+            <tr>
+    <td>Multistarrer</td>
+    <td>Whether the movie is a multistarrer movie</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+            <tr>
+    <td>Remake/Sequel</td>
+    <td>Whether the movie is a remake/sequel of an existing movie</td>
+    <td>Y->Yes,N->No(Housefull, Housefull 2)</td>
+                <tr>
+    <td>Debutant</td>
+    <td>Whether the movie has a newcomer</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+            <tr>
+    <td>Women Centric</td>
+    <td>Whether the movie is women centric</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+     <tr>
+    <td>Autobiography</td>
+    <td>Whether the movie is an autobiography of a great personality</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+             <tr>
+    <td>Political</td>
+    <td>Would the movie captivate the political audience</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+     <tr>
+    <td>Message</td>
+    <td>Does the movie convey a strong message</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+     <tr>
+    <td>Motivational</td>
+    <td>Does the movie lift up the spirits</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+     <tr>
+    <td>Historical</td>
+    <td>Does the movie take us back to our strong roots</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+     <tr>
+    <td>Musical/Dance</td>
+    <td>Does the movie make you tap your feet or sing along</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+     <tr>
+    <td>Comedy</td>
+    <td>Does the movie make you laugh till your stomach hurts</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+            <tr>
+    <td>Mystery</td>
+    <td>Does the movie unravel a mystery</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+            <tr>
+    <td>Crime/War</td>
+    <td>Whether the movie is crime or war based</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+            <tr>
+    <td>Suspense</td>
+    <td>Does the movie make hold something unpredictable</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+            <tr>
+    <td>SciFic</td>
+    <td>Scientific Fiction</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+            <tr>
+    <td>Sports-based</td>
+    <td>Is the movie Sports-based movie</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+  <tr>
+    <td>Romance</td>
+    <td>Does the movie involve Romance</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+            <tr>
+    <td>Court-Case</td>
+    <td>Does the movie involve Court Cases</td>
+    <td>Y->Yes,N->No</td>
+  </tr>
+</table></h1></centre>
+        <div class="row center">
+        <h5 class="header col s12 light">Thanks<br></h5>
+        </div>
+    </div></div></div></div></body></html>

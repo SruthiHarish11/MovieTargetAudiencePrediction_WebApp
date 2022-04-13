@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title> Movie Target Audience Prediction</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    
+    
+    </head>
+
+<body>
+    <script  var slider = document.getElementById("fifth_name");
+var output = document.getElementById("demo");
+          output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}></script>
+    <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="description.html" class="brand-logo">🎥🎬</a>
+        
+        <ul class="right hide-on-med-down">
+        <li><a href="description.html"> Description</a></li>
+        </ul>
+        <ul id="nav-mobile" class="sidenav">
+        <li><a href="description.html"> Navbar Link</a></li></ul>
+        
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div></nav>
+    <div class="sec no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <centre><h1 class="jumbotron">Movie Target Audience Prediction</h1></centre>
+        <div class="row center">
+        <h5 class="header col s12 light">Predict the Target Audience of a movie<br></h5>
+        </div>
+        
+        <div class="row">
+        <form action='/predict' method="POST" class="col s12">
+            <div class="row">
+            <div class="input-field col s4">
+                <label for="first_name"><b>Director</b></label>
+                <br>
+                <input id="first_name" name="Director" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="second_name"><b>Actor</b></label>
+                <br>
+                <input id="second_name" name="Actor" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="third_name"><b>Actress</b></label>
+                <br>
+                <input id="third_name" name="Actress" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="fourth_name"><b>Certificate</b></label>
+                <br>
+                <input id="fourth_name" name="Certificate" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="fifth_name"><b>Rating:<!--<span id="demo"></span>--></b></label>
+                <br>
+                <input id="fifth_name" name="Rating" type="number" min="0" max="5" step="0.5"class="validate">
+                    
+                    <!--<input type="text" id="textInput" value="">-->
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="sixth_name"><b>Horror</b></label>
+                <br>
+                <input id="sixth_name" name="Horror" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="seventh_name"><b>Thriller</b></label>
+                <br>
+                <input id="seventh_name" name="Thriller" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="eighth_name"><b>Action</b></label>
+                <br>
+                <input id="eighth_name" name="Action" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="ninth_name"><b>Multistarrer</b></label>
+                <br>
+                <input id="ninth_name" name="Multistarrer" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="tenth_name"><b>Remake/Sequel</b></label>
+                <br>
+                <input id="tenth_name" name="Remake/Sequel" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="eleventh_name"><b>Debutant</b></label>
+                <br>
+                <input id="eleventh_name" name="Debutant" type="text" class="validate">
+            </div>
+                <div class="input-field col s4">
+                <label for="twelveth_name"><b>Women Centric</b></label>
+                <br>
+                <input id="twelveth_name" name="Women Centric" type="text" class="validate">
+            </div>
+                <div class="input-field col s4">
+                <label for="thirteenth_name"><b>Autobiography</b></label>
+                <br>
+                <input id="thirteenth_name" name="Autobiography" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="fourteenth_name"><b>Political</b></label>
+                <br>
+                <input id="fourteenth_name" name="Political" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="fifteenth_name"><b>Message</b></label>
+                <br>
+                <input id="fifteenth_name" name="Message" type="text" class="validate">
+            </div>
+                <div class="input-field col s4">
+                <label for="sixteenth_name"><b>Motivational</b></label>
+                <br>
+                <input id="sixteenth_name" name="Motivational" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="seventeenth_name"><b>Historical</b></label>
+                <br>
+                <input id="seventeenth_name" name="Historical" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="eighteenth_name"><b>Musical/Dance</b></label>
+                <br>
+                <input id="eighteenth_name" name="Musical/Dance" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="nineteenth_name"><b>Comedy</b></label>
+                <br>
+                <input id="nineteenth_name" name="Comedy" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="twentieth_name"><b>Mystery</b></label>
+                <br>
+                <input id="twentieth_name" name="Mystery" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="twentyfirst_name"><b>Crime/War</b></label>
+                <br>
+                <input id="twentyfirst_name" name="Crime/War" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="twentysecond_name"><b>Suspense</b></label>
+                <br>
+                <input id="twentysecond_name" name="Suspense" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="twentythird_name"><b>Scific</b></label>
+                <br>
+                <input id="twentythird_name" name="Scific" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="twentyfourth_name"><b>Sports-based</b></label>
+                <br>
+                <input id="twentyfourth_name" name="Sports-based" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="twentyfifth_name"><b>Romance</b></label>
+                <br>
+                <input id="twentyfifth_name" name="Romance" type="text" class="validate">
+            </div>
+                
+                <div class="input-field col s4">
+                <label for="twentysixth_name"><b>Court-Case</b></label>
+                    
+                <br>
+                <input id="twentysixth_name" name="Court-Case" type="text" class="validate">
+            </div>
+            </div>
+            <div class="row center">
+            <button type="submit" class="btn-large waves-effect waves-light orange"> Predict</button></div>
+            </form></div>
+        <br><br>
+        </div></div>
+    
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+    
+    </body>
+    
+</html>
